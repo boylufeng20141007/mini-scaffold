@@ -1,0 +1,23 @@
+{
+  "name": "mini-scaffold",
+  "version": "1.0.0",
+  "description": "front end scaffold",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/boylufeng20141007/mini-scaffold.git"
+  },
+  "keywords": [
+    "scaffold"
+  ],
+  "author": "luxlu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/boylufeng20141007/mini-scaffold/issues"
+  },
+  "homepage": "https://github.com/boylufeng20141007/mini-scaffold#readme",
+  "devDependencies": {}
+}
