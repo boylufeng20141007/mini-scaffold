@@ -3,7 +3,7 @@
  * @Author: luxlu 
  * @Date: 2018-03-13 15:24:51 
  * @Last Modified by: luxlu
- * @Last Modified time: 2018-03-13 17:08:13
+ * @Last Modified time: 2018-03-13 17:19:55
  */
 
 const path = require('path');
@@ -26,7 +26,7 @@ function writeTemplate(type, name) {
     }
 }
 
-const typePromise = prompt([ { 
+const typePromise = prompt([{ 
     type: 'list', 
     name: 'type', 
     message: '请选择一种模板', 
@@ -35,7 +35,7 @@ const typePromise = prompt([ {
 }]);
 
 typePromise.then(type=> {
-    prompt([ { 
+    prompt([{ 
         type: 'input', 
         name: 'name', 
         message: '请输入组件名', 

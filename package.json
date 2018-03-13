@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "node --harmony ./scripts/dev.server.js",
+    "build": "node --harmony ./build/build.js",
     "new:page": "node --harmony ./scripts/new.page.tpl.js",
     "test": "node --harmony ./scripts/generate.webpack.entry.js"
   },
@@ -25,6 +26,7 @@
     "chalk": "^2.3.2",
     "express": "^4.16.3",
     "fs-extra": "^5.0.0",
+    "html-webpack-plugin": "^3.0.6",
     "inquirer": "^5.1.0",
     "ora": "^2.0.0",
     "webpack": "^4.1.1",
