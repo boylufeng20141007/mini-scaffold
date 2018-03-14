@@ -5,4 +5,4 @@
  * @Last Modified time: 2018-03-14 16:29:07
  */
 
-import './page.scss';
+import './welcome.scss';

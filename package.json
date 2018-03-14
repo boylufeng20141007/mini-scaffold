@@ -4,9 +4,9 @@
   "description": "front end scaffold",
   "main": "index.js",
   "scripts": {
-    "dev": "node --harmony ./scripts/dev.server.js",
+    "dev": "node --harmony ./build/dev.server.js",
     "build": "node --harmony ./build/build.js",
-    "dist": "webpack --mode=development ./build/webpack.base.config.js",
+    "dist": "webpack --mode production --config ./build/webpack.prod.config.js",
     "new:page": "node --harmony ./scripts/new.page.tpl.js",
     "test": "node --harmony ./scripts/generate.webpack.entry.js"
   },
@@ -25,13 +25,16 @@
   "homepage": "https://github.com/boylufeng20141007/mini-scaffold#readme",
   "devDependencies": {
     "chalk": "^2.3.2",
+    "clean-webpack-plugin": "^0.1.19",
     "express": "^4.16.3",
     "fs-extra": "^5.0.0",
     "html-webpack-plugin": "^3.0.6",
     "inquirer": "^5.1.0",
     "ora": "^2.0.0",
     "webpack": "^4.1.1",
+    "webpack-cli": "^2.0.12",
     "webpack-dev-middleware": "^3.0.1",
+    "webpack-hot-middleware": "^2.21.2",
     "webpack-merge": "^4.1.2"
   }
 }
