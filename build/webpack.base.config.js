@@ -11,22 +11,23 @@ const pluginsFn = require('../scripts/generate.webpack.plugin');
 const pageNameArr = Object.keys(entryObj);
 
 function resolve (dir) {
-    return path.join(__dirname, '..', dir)
+    return path.resolve(__dirname, '..', dir)
 }
 
 module.exports = {
     entry: entryObj,
     output: {
-        path: path.resolve(__dirname, 'dist'),
+        path:resolve('dist'),
         filename: '[name].[chunkhash:8].js',
         publicPath: '/'
     },
     module: {
-        rules: [{
-            test: /\.js$/,
-            loader: 'babel-loader',
-            include: [resolve(src)]
-        }]
+        // rules: [{
+        //     test: /\.js$/,
+        //     loader: 'babel-loader',
+        //     include: [resolve('src')],
+        //     exclude: [resolve('node_modules')]
+        // }]
     },
     resolve: {},
     plugins: pluginsFn(pageNameArr)

@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "node --harmony ./scripts/dev.server.js",
     "build": "node --harmony ./build/build.js",
+    "dist": "webpack --mode=development ./build/webpack.base.config.js",
     "new:page": "node --harmony ./scripts/new.page.tpl.js",
     "test": "node --harmony ./scripts/generate.webpack.entry.js"
   },
