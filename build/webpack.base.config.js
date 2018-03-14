@@ -2,7 +2,7 @@
  * @Author: luxlu 
  * @Date: 2018-03-13 11:51:15 
  * @Last Modified by: luxlu
- * @Last Modified time: 2018-03-14 17:54:35
+ * @Last Modified time: 2018-03-14 20:25:22
  */
 
 const path = require('path');
@@ -30,11 +30,6 @@ module.exports = {
 		},
 		occurrenceOrder: true // To keep filename consistent between different modes (for example building only)
 	},
-    output: {
-        path: resolve('dist/static'),
-        filename: '[name].[chunkhash:8].js',
-        publicPath: '/'
-    },
     module: {
         // rules: [{
         //     test: /\.js$/,
