@@ -3,7 +3,7 @@
  * @Author: luxlu 
  * @Date: 2018-03-13 11:56:36 
  * @Last Modified by: luxlu
- * @Last Modified time: 2018-03-13 17:08:49
+ * @Last Modified time: 2018-03-15 15:51:28
  */
 
 const path = require('path');
@@ -22,7 +22,7 @@ function getPageEntry(files) {
     const entry = {};
 
     files.forEach(name => {
-        entry[name] = `./src/page/${name}/${name}.js`;
+        entry[name] = ['babel-polyfill', 'webpack-hot-middleware/client?noInfo=true&reload=true', `./src/page/${name}/${name}.js`];
     });
 
     return entry;
