@@ -28,7 +28,6 @@ module.exports = merge(webpackBaseConfig, {
     },
     mode: 'production',
     plugins: [
-        new webpack.DefinePlugin({ 'process.env': {'NODE_ENV': config.NODE_EVN}}),
         new CleanWebpackPlugin(pathsToClean, cleanOptions)
     ]
 });

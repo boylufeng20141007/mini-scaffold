@@ -2,7 +2,7 @@
  * @Author: luxlu 
  * @Date: 2018-03-14 16:52:44 
  * @Last Modified by: luxlu
- * @Last Modified time: 2018-03-15 18:04:28
+ * @Last Modified time: 2018-03-16 16:14:23
  */
 
 const path = require('path');
@@ -22,7 +22,6 @@ module.exports = merge(webpackBaseConfig, {
         publicPath: config.publicPath
     },
     plugins: [
-        new webpack.DefinePlugin({ 'process.env': {'NODE_ENV': config.NODE_EVN}}),
         new webpack.HotModuleReplacementPlugin()
     ]
 });

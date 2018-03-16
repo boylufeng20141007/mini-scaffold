@@ -3,7 +3,7 @@
  * @Author: luxlu 
  * @Date: 2018-03-13 19:59:29 
  * @Last Modified by: luxlu
- * @Last Modified time: 2018-03-14 16:49:21
+ * @Last Modified time: 2018-03-16 16:18:38
  */
 
 const path = require('path');
@@ -22,7 +22,7 @@ module.exports = pageNameArr => {
                 collapseWhitespace: false //删除空白符与换行符
             },
             chunksSortMode: 'manual',
-            chunks: [`${pageName}`]
+            chunks: ['commons', `${pageName}`]
         }));
     });
 
