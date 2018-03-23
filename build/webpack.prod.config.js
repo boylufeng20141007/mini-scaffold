@@ -2,7 +2,7 @@
  * @Author: luxlu 
  * @Date: 2018-03-14 17:26:54 
  * @Last Modified by: luxlu
- * @Last Modified time: 2018-03-15 17:53:43
+ * @Last Modified time: 2018-03-23 12:03:48
  */
 
 const path = require('path');
@@ -21,12 +21,12 @@ const cleanOptions = {
 };
 
 module.exports = merge(webpackBaseConfig, {
+    mode: 'production',
     output: {
         path: path.resolve(__dirname, '..', 'dist/static'),
         filename: 'js/[name].[chunkhash:8].js',
         publicPath: config.publicPath
     },
-    mode: 'production',
     plugins: [
         new CleanWebpackPlugin(pathsToClean, cleanOptions)
     ]
