@@ -2,7 +2,7 @@
  * @Author: luxlu 
  * @Date: 2018-03-14 16:52:44 
  * @Last Modified by: luxlu
- * @Last Modified time: 2018-03-22 17:33:29
+ * @Last Modified time: 2018-03-23 10:54:37
  */
 
 const path = require('path');
@@ -16,6 +16,7 @@ function resolve (dir) {
 }
 module.exports = merge(webpackBaseConfig, {
     mode: 'development',
+    devtool: 'inline-source-map',
     output: {
         path: resolve('dist/static'),
         filename: '[name].js',
